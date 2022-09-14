@@ -36,16 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://nl.suitsuit.com
+  https://www.heineken.com/nl/nl/home
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/HomePagina.png" width="375px" alt="Afbeelding van de homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/ProductenPagina.png" width="375px" alt="Afbeelding van de productenpagina">
  
 </details>
 
@@ -57,30 +56,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Testen heb ik uitgevoerd samen met Frank. 
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Test met voice over:
+  Als je tabt door de website leest hij alles voor. 
+  De voice over werkt naar toebehoren.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Test met de tab: 
+    Je kan geheel doorheen tabben. 
+    De tab gaat ook door in de socials en het logo.
+    Alleen in de swipe content werkt hij minder goed.
+    Talen pakt hij niet bij het tabben.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Testen met shocks:
+    Je klikt al sneller op de afbeeldingen zonder dat je het wilt. 
+    Je hebt vrijwel slechte controle op de website. 
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Testen met kleuren en blurren:
+    Kleur is wel essentieel, vooral omdat je die kleuren bent gewend bij Heineken.
+    Bij het blurren is de kleine tekst niet meer leesbaar, de grote koppen zijn nog te doen.
 
 </details>
 
@@ -92,7 +91,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/HeinekenUittekeningHome.jpg" width="375px" alt="Screenshot van de gehele homepagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
