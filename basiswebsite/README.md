@@ -91,13 +91,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="images/HeinekenUittekeningHome.jpg" width="375px" alt="Screenshot van de gehele homepagina">
+  <img src="images/HeinekenUittekeningHomeMobile.jpg" width="375px" alt="Breakdown van homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images/HeinekenUittekeningProductenMobile.jpg" width="375px" alt="Breakdown van productenpagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images/HeinekenCarrousel.jpg" width="375px" alt="Breakdown van de carrousel">
 
 </details>
 
@@ -111,26 +111,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Momenteel heb ik mij voornamelijk gefocusd op mijn html code en heb ik hiervoor een opzetje gemaakt. 
+  Verder ben ik nog niet begonnen in mijn html. Na dit gesprek met de studentassistenten hoop ik te weten of ik 
+  op de juiste weg bezig ben, waar ik nog wat aanpassingen nodig heb en of ik redelijk bij loop.
+
+  Voor het binnen komen in het lokaal zouden wij met ons groepje bespreken waar wij allemaal zouden staan, 
+  helaas ging dit anders dan gepland en is de helft niet komen opdagen tijdens dit moment. Jade en ik waren een half
+  uurtje van tevoren wel aanwezig, alleen gaf zij aan nog niet veel werk te hebben (html) omdat zij daar niet uit kwam. 
+  Het maken van afspraken/punten met mijn groepje is deze week dan ook anders gelopen dan verwacht, wat ik persoonlijk
+  erg jammer vind...
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 (Kyara) | student 2 (Jade) | student 3 (Silke) | student 4 (Suneyska) |
+  | ---               | ---              | ---               | ---                  |
+  | Vragen of mijn    | Vragen over haar | Niet aanwezig     | Niet aanwezig
+  code semantisch     | menu hoe dit te  | tijdens gesprek   | tijdens gesprek
+  kloppend is.        | doen in html?
+                      | Andere website?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Feedback vanuit de studentassistenten na het gesprek:
+  - Html code is goed semantisch geschreven.
+  - Kijk nog even naar de volgorde met h2,h3,h4 en je img. Dus eerst je tekstelementen en dan je img. 
+  - Ga thuis veel stappen maken, veel gaan schrijven en dan in de les je vragen stellen.
 
 </details>
 
@@ -144,26 +151,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Helaas was er deze week een herhaling van afgelopen week, maar nu zo erg dat ik in mijn eentje ben over gebleven bij 
+  het bespreken van mijn website in de klas. Als groepje spreken (althans dan zouden we doen) we een half uur voor het 
+  check moment af in de medialounge om elkaars werk te zien, eventuele verbeterpunten door te geven en samen te kijken 
+  waar iedereen momenteel staat. Heb bijna het idee dat ik in herhaling val, maar dat is dus NIET gebeurt. Wel heb ik er 
+  zelf naar gekeken maar goed dat doe ik inmiddels al 2 weken.
+  Vervolgens heb ik samen met Sanne, alle tijd gehad om te kijken naar mijn website. De vragen te stellen  die ik op 
+  dat moment had (vooral over mijn eerste section die ik niet goed gepositioneerd kreeg) en ben ik een stuk wijzer
+  geworden hoe ik het kon aanpakken voor de weken erna. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 (Kyara)   | student 2  (Jade)    | student 3  (Silke) | student 4 (Suneyska) |
+  | ---                 | ---                  | ---                | ---              |
+  | De vraag hoe ik     | Heeft zich vanwege   | Niet aanwezig      | Niet aanwezig
+  de diverse elementen  | storing trein        | tijdens gesprek    | tijdens gesprek
+  in mijn eerste        | samengevoegd met de  |
+  section goed          | volgende groep.      |
+  gepositioneerd        |           
+  kan krijgen.          |
+
+           
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+Feedback vanuit Sanne na het gesprek:
+  - meer code gaan schrijven
+  - 
 
 </details>
 

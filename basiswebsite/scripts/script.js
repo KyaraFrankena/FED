@@ -6,6 +6,9 @@ function toggleMenu() {
   deHeader.classList.toggle("menuOpen");
 }
 
+
+
+
 function createCaroCarrousel(carrouselID) {
 	let carrousel = document.querySelector("#"+carrouselID);
   let carrouselElementsContainer = carrousel.querySelector(":scope > ul");
@@ -194,6 +197,27 @@ function createCaroCarrousel(carrouselID) {
 // nadat de pagina geladen is, de carrousels activeren
 (function() {
   // hier de id gebruiken van de section in de html
-  // createCaroCarrousel("bolletjesAndAutoScroll");
+  createCaroCarrousel("bolletjesAndAutoScroll");
   //je kunt hier ook meerdere carrousellen activeren
 })();
+
+
+
+
+
+
+/**************************/
+/* DERDE STREEPJES BUTTON */
+/**************************/
+var derdeStreepjesButton = document.querySelector("section.streepjes li button");
+derdeStreepjesButton.addEventListener("click", derdeStreepjesButtonKlik);
+function derdeStreepjesButtonKlik() {
+  derdeStreepjesButton.classList.toggle("menuOpen");
+}
+
+
+
+
+
+
+
