@@ -112,7 +112,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Momenteel heb ik mij voornamelijk gefocusd op mijn html code en heb ik hiervoor een opzetje gemaakt. 
-  Verder ben ik nog niet begonnen in mijn html. Na dit gesprek met de studentassistenten hoop ik te weten of ik 
+  Verder ben ik nog niet begonnen in mijn css. Na dit gesprek met de studentassistenten hoop ik te weten of ik 
   op de juiste weg bezig ben, waar ik nog wat aanpassingen nodig heb en of ik redelijk bij loop.
 
   Voor het binnen komen in het lokaal zouden wij met ons groepje bespreken waar wij allemaal zouden staan, 
@@ -197,27 +197,37 @@ Feedback vanuit Sanne na het gesprek:
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De screenreader heb ik getest op zowel linkjes als kopjes. 
+  Die werken allemaal wel. Merk alleen dat als je kijkt naar sommige linkjes de teksten niet helemaal relevant zijn 
+  als je de screenreader gebruikt. Dus daar kan ik wel iets in veranderen en zorgen dat dit dus wel direct duidelijk word. 
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Website is wel tabbaar, alleen 1 button moet ik nog aanpassen die werkt niet binnen mijn html/css.
+  Bij blurred is de p tekst vrijwel niet meer leesbaar. De kleuren en afbeeldingen blijven nog wel herkenbaar.
+  Bij het veranderen van de kleuren blijft alles wel leesbaar en begrijpelijk. Het enige wat je merkt is dat 
+  de kleuren van het merk waardoor je direct weet wat het is niet meer te vinden is (zwart-wit, blauwtinten etc.). 
+  Ondanks dat is de website nog prima in gebruik. 
+  <img src="images/HeinekenTestZW.jpg" width="375px" alt="Screenshot test ZwartWit">
+  <img src="images/HeinekenTestGeel.jpg" width="375px" alt="Screenshot test Geeltinten">
+  <img src="images/HeinekenTestBlauw.jpg" width="375px" alt="Screenshot test Blauwtinten">
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De website is goed toegangelijk met het hebben van parkinson. Om de muis te kunnen gebruiken is het wel wat moeilijker
+  maar mijn testpersoon zelf heeft ook het idee dat als je parkinson hebt je meer je tab of pijltjes zal gebruiken  i.p.v.
+  je muis. De buttons zijn groot genoeg om te kunnen klikken, kortom werkt prima.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Geeltinten: Kleuren van mijn website worden anders, maar leesbaarheid&herkenbaarheid blijft.
+  Periphereal field loss: Het is goed te zien, alleen zodra je langere teksten hebt word het moeilijker om te kunnen lezen.
+  Combined loss: Het is goed te zien, alleen vanaf een afstandje begint het moeilijker te worden.
+  Low contrast: Leesbaarheid van testen minder, kleuren veranderen hier en daar
+  blur: Alles wordt wazig, logisch. Je ziet wel kleuren maar kan niet definieren wat er staat. Het word moeilijker om de 
+  website te begrijpen.
+  Hemifield loss: Goed zichtbaar, niet echt problemen bij het bekijken van mijn website.
+  Central field loss: Ondanks de zwarte stip in het midden is de website nog duidelijk te lezen. Je kan naast de stip kijken en vinden wat je zoekt.
+  
 
 </details>
 
@@ -232,17 +242,17 @@ Feedback vanuit Sanne na het gesprek:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Momenteel ben ik een paar dagen voor de uiteindelijke deadline beland.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | student 1 (Kyara)  | student 2 (Jade)    | student 3 (Silke)  | student 4 (Suneyska) |
+  | ---                | ---                 | ---                | ---                  |
+  | button met img     | Items naast elkaar, | Niet aanwezig      | Niet aanwezig
+  | clickable maken &  | footer voor elkaar  | tijdens gesprek    | tijdens gesprek
+  | hoe p toevoegen in | krijgen.            |
+  | grid?              |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -290,8 +300,17 @@ Feedback vanuit Sanne na het gesprek:
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Niet zozeer dat ik iets van code van de website heb kunnen kopieren en plakken maar voornamelijk kennis van 
+     het grid en hoe te gebruiken heb ik hier vandaan kunnen halen 
+     https://css-tricks.com/snippets/css/complete-guide-grid/
+  2. Natuurlijk de website van Heineken, waarvan ik vrijwel alle content heb gehaald om er zo voor te zorgen dat 
+     mijn website zo goed mogelijk op de echte versie zal lijken.
+     https://www.heineken.com/nl/nl/home
+  3. Freepik, voor het hebben van de social media icons. Dit is een website die dit rechtenvrij aanbiedt. 
+     https://www.freepik.com/free-vector/social-media-logo-collection_3899143.htm#query=instagram%20icon&position=2&from_view=search#position=2&query=instagram%20icon
+  4. Code van Sanne vanuit codepen, denk hierbij aan het realiseren van mijn carrousel, maar ook het laten werken van 
+     mijn menuknop die van 3lijnen veranderd in een kruisje en weer terug. 
+  5. The noun project voor een pijl die open kan klappen. Tweemaal nodig op mijn website. 
+    https://thenounproject.com/icon/arrow-3134103/
 
 </details>

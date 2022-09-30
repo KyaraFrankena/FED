@@ -1,0 +1,1429 @@
+/****************************/
+/** ALLE BLOKJES & BUTTONS **/
+
+main > section > ul > li {
+    /* de buttons in het midden van de li's positioneren */
+    display:grid;
+    place-content:center;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  main > section > ul > li button {
+    /* vierkant */
+    /* developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
+    height:2.75rem;
+    aspect-ratio:1/1;
+    
+    /* de default padding van een button verwijderen */
+    padding:0;
+    
+    /* blauw met witte tekst en geen border */
+    color:var(--color-button-text);
+    background-color:var(--color-button-background);
+    border:none;
+    
+    /* tekst zelfde als normale tekst (qua font en grootte) */
+    /* nb. default wordt een systeem-font gebruikt voor buttons */
+    /* nb. default is tekst van buttons iets kleiner dan van een p */
+    font-family:inherit;
+    font-size:1em;
+    
+  }
+  
+  /* de button is iets donkerder tijdens het klikken */
+  main > section > ul > li button:active {
+    background-color:var(--color-button-background-active);
+  }
+  
+  
+  
+  /****************************/
+  /** DERDE STREEPJES BUTTON **/
+  
+  
+  section.streepjes ul {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  
+  section.streepjes li button {
+    padding:.5em 1em;
+    /* de aspect-ratio die voor alle buttons was ingesteld ongedaan maken */
+    aspect-ratio:unset;
+    
+    /* een grid met 2 kolommen */
+    /* eerste kolom voor de spans (auto) */
+    /* tweede kolom voor de tekst (auto) */
+    /* .5em ruimte tussen de kolommen met gap */
+    /* de grid-kinderen met alalign-items-items in het midden van de grid-cellen positionern */
+    display:grid;
+    grid-template-columns:auto auto;
+    gap:.5em;
+    align-items:center;
+    top: -4em;
+    right: -21.5em;
+    
+    
+    /* ronde hoekjes en hoofdletters */
+    border-radius:1.375em;
+    text-transform:uppercase;
+    
+    /* transities duren .5s */
+    transition-duration:.5s;
+  }
+  
+  /* alledrie de streepjes */
+  section.streepjes li button span {
+    /* alledrie de spans in de eerste rij en tweede kolom */
+    /* ze staan dan over elkaar heen */
+    grid-row-start:1;
+    grid-column-start:2;
+    
+    /* grootte en kleur van de streepjes */
+    width:.9rem;
+    height:.15rem;
+    background-color:var(--color-button-text);
+    
+    /* transities duren .5s */
+    transition-duration:.5s;
+  }
+  
+  /* het eerste streepje */
+  section.streepjes li button span:nth-of-type(1) {
+    /* met transform: */
+    /* .3em omhoog */
+    transform:translateY(-.3rem);
+  }
+  
+  /* het tweede streepje
+  section.streepjes li button span:nth-of-type(2) {
+     /* staat al op de goede plek  
+  } */
+  
+  /* het derde streepje */
+  section.streepjes li button span:nth-of-type(3) {
+    /* met transform: */
+    /* .3em omlaag */
+    transform:translateY(.3rem);
+  }
+  
+  /*********************************************************/
+  /* als de DERDE STREEPJES BUTTON de class menuOpen heeft */
+  
+  
+  /* section.streepjes li button.menuOpen {
+    /* achtergrondkleur wijzigen naar --color-button-background-open */
+    /* background-color:var(--color-button-background-open); 
+  } */
+  
+  /* het eerste streepje */
+  section.streepjes li button.menuOpen span:nth-of-type(1) {
+    /* met transform: */
+    /* 1. 135 graden draaien met de klok mee */
+    /* 2. 25% langer maken */
+    transform:
+      rotate(135deg) 
+      scalex(1.25);
+  }
+  
+  /* het tweede streepje */
+  section.streepjes li button.menuOpen span:nth-of-type(2) {
+    /* met transform: */
+    /* horizontaal helemaal plat maken */
+    transform:
+      scalex(0);
+  }
+  
+  /* het derde streepje */
+  section.streepjes li button.menuOpen span:nth-of-type(3) {
+    /* met transform: */
+    /* 1. 135 graden draaien tegen de klok in */
+    /* 2. 25% langer maken */
+    transform:
+      rotate(-135deg) 
+      scalex(1.2);
+  }
+  
+  
+  /**********/
+  /* FONT H1 & H2 EERSTE SECTION */
+  /**********/
+  
+  main section:nth-of-type(1) h1 {
+      font-family: Heineken;
+      font-size: 2.5em;
+      color: var(--color-header-text);
+      letter-spacing: .031875rem;
+      margin:0;
+      padding: 0.1em;
+      list-style-type: none;
+      text-decoration: none;
+      order: 2;
+  }
+  
+  main section:nth-of-type(1) h2 {
+      font-family: PT sans, sans-serif;
+      font-size: 0.750em;
+      font-weight:lighter;
+      text-transform: uppercase;
+      text-decoration: none;
+      list-style-type: none;
+      letter-spacing: .031875rem;
+      margin-bottom:0em;
+      color: var(--color-header-text);
+      order: 1;
+  }
+  
+  
+  /**********/
+  /* HEINEKEN SILVER BEGIN POSITIONERING 1E SECTION */
+  /**********/
+  main section:nth-of-type(1) {
+    height:30em;
+    position:relative;
+  }
+  
+  main section:nth-of-type(1) div {
+    position:absolute;
+    top: 12em;
+    left: 2em;
+    width: 16em;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  main section:nth-of-type(1) img {
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative; 
+    display: block;
+    z-index: -1;
+    filter:brightness(.5);
+  }
+  
+  main section:nth-of-type(1) a {
+    font-family: PT sans, sans-serif;
+    color: var(--color-header-button);
+    background-color: #ffffff80;
+    letter-spacing: .031875rem;
+    text-decoration: none;
+    top: 10em;
+    padding: 1em ;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+    width: 60%;
+    order: 3;
+  }
+  
+  main section:nth-of-type(1) a:hover {
+    background-color: var(--color-header-hover-background);
+    color: var(--color-header-hover-text);
+    cursor:pointer;
+  }
+  
+  main section:nth-of-type(1) a:focus {
+    outline:none;
+    background-color: var(--color-header-focus-background);
+  }
+  
+  main section:nth-of-type(1) a:active {
+    background-color: var(--color-header-active-background);
+    color: var(--color-header-active-text);
+  }
+  
+  
+  
+  
+  /****************************************************************/
+  /* TWEEDE SECTION 'ONS VERHAAL' */
+  /****************************************************************/
+  section:nth-of-type(2) ul {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	gap:1em;
+	margin:0;
+	padding:0;
+	list-style:none;
+    padding:1em;
+}
+
+section:nth-of-type(2) li {
+	position:relative;
+}
+
+
+section:nth-of-type(2) li:nth-of-type(1) {
+	grid-column-start:1;
+	grid-column-end:-1;
+    
+}
+
+
+section:nth-of-type(2) li div:nth-of-type(2) {
+    position:absolute;
+	background-color:rgb(0 179 51 /.75);
+	bottom:1em;
+	left:1em;
+	padding:1em;
+	top: .5em;
+	color:white;
+    height:11em;
+    width:14em;
+}
+
+section:nth-of-type(2) li div h2 {
+	margin:0;
+}
+
+section:nth-of-type(2) li div p {
+	margin:0;
+}
+
+section:nth-of-type(2) li img {
+	width:100%;
+}
+
+section:nth-of-type(2) li:nth-of-type(1) div {
+    position:absolute;
+    left: 1.3em;
+    width: 12em;
+    height: 10em;
+    display:flex;
+    flex-direction: column;
+    background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+    opacity: .9;
+    top: 1em;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(2) div {
+    position:absolute;
+    left: 1.3em;
+    width: 7.5em;
+    height: 5em;
+    display:flex;
+    flex-direction: column;
+    background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+    opacity: .9;
+    top: .5em;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(3) div {
+    position:absolute;
+    top: 1.4em;
+    left: 1em;
+    width: 6em;
+    height: 4em;
+    display:flex;
+    flex-direction: column;
+    background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+    opacity: .9;
+  } 
+  
+  /****************************************************************/
+  /* TWEEDE SECTION 'ONS VERHAAL'  FONTJES! */
+  
+  :root {  
+    --color-text-h2: #13670b;
+    --color-text-vlakken: white;
+  }
+  
+  
+  section:nth-of-type(2) h2 {
+    font-family: Heineken;
+    font-size: 2.25em;
+    color: var(--color-text-h2);
+    text-transform: uppercase;
+    padding-left: .5em;
+    margin-bottom: 0em;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(1) div h3 {
+    font-family: Heineken;
+    color: var( --color-text-vlakken);
+    font-size: 1.125em;
+    top: 0em;
+    margin:0;
+    left: 1em;
+    padding-left:0.4em;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+    order: 2;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(1) div h4 {
+    font-family: PT sans, sans-serif;
+    font-size: 0.750em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    color: var( --color-text-vlakken);
+    padding-left:0.4em;
+    order:1;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(1) div p {
+    font-family: PT sans, sans-serif;
+    font-size: 0.625em;
+    color: var( --color-text-vlakken);
+    padding-left:0.4em;
+    white-space: wrap;
+    overflow: hidden;  
+    order: 3;
+  }
+
+section:nth-of-type(2) li:nth-of-type(2) div h3 {
+    font-family: Heineken;
+    color: var(--color-text-vlakken);
+    font-size: 0.75em;
+    top: 0em;
+    margin:0;
+    left: 1em;
+    padding-left:0.4em;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+    order:2;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(2) div h4 {
+    font-family: PT sans, sans-serif;
+    font-size: 0.5em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    color: var(--color-text-vlakken);
+    padding-left:0.4em;
+    order:1;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(3) div h3 {
+    font-family: Heineken;
+    color:var(--color-text-vlakken);
+    font-size: 0.75em;
+    top: 0em;
+    margin:0;
+    left: 1em;
+    padding-left:0.4em;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+    order:2;
+  }
+  
+section:nth-of-type(2) li:nth-of-type(3) div h4 {
+    font-family: PT sans, sans-serif;
+    font-size: 0.5em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    color: var( --color-text-vlakken);
+    padding-left:0.4em;
+    order:1;
+  }
+  
+  
+  /****************************************************************/
+  /* START CARROUSEL ALGEMENE STIJLEN + 3e SECTION /*
+  /****************************************************************/
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+      --maxWidth:32rem;
+  }
+  
+  body {
+      grid-template-columns: minmax(auto, var(--maxWidth));
+      justify-content:center;
+  }
+  
+    
+  /******************************/
+  /* DE CAROCARROUSEL CONTAINER */
+  
+  
+  .caroCarrousel {
+      /* basis waarden die door de hele carrousel gebruikt worden */
+      /* kun je zelf aanpassen */
+      --caroCarrouselMainColor:#333;
+    --caroCarrouselAccentColor:#1b75b3;
+      --caroCarrouselShadeColor:#ddd9;
+    --caroCarrouselInverseColor:#e48a4c;
+    
+    --caroCarrouselAutoScrollInterval:4000;
+  
+    position: relative;
+      outline:none;
+  }
+  
+  /* dark mode */
+  @media (prefers-color-scheme: dark) {
+    .caroCarrousel {
+      --caroCarrouselMainColor:#ccc;
+      --caroCarrouselShadeColor:#4449;
+    }
+  }
+  
+  
+  /************************************/
+  /* de carrousel elementen container */
+  .caroCarrousel > ul {
+    margin: 0; padding: 0;
+    list-style: none;
+      display: flex;
+      
+      /* handmatig scrollen is mogelijk */
+      overflow: hidden;
+      
+      /* snappen als er gescrolled wordt - andere helft bij li */
+    scroll-snap-type: inline mandatory;
+    /* scrollbar zoveel mogelijk verbergen */
+    -webkit-overflow-scrolling: touch; /* voor iOS*/
+    -ms-overflow-style: none; /* voor IE */
+      scrollbar-width: none; /* voor firefox */
+  }
+  
+  .caroCarrousel > ul::-webkit-scrollbar {
+    /* scrollbar zoveel mogelijk verbergen */
+    display: none; /* voor chrome, safari en edge*/
+  }
+  
+  
+  /**************************/
+  /* de carrousel elementen */
+  .caroCarrousel > ul li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    /* snappen als er gescrolled wordt - andere helft bij ul */
+      scroll-snap-align:center;
+  }
+  
+  
+  /**********************************/
+  /* de carrousel elementen content */
+  
+  /* de stijlen voor jouw content hier */
+  .caroCarrousel > ul li > img {
+    display: block;
+    width: 65%;
+    margin-left: 11em;
+  }
+  
+  /* .caroCarrousel ul li:nth-of-type(1) {
+    display: flex;
+  } */
+  
+  
+  
+  /******************************/
+  /* DE CAROCARROUSEL FONTS */
+  
+  :root {
+    --color-text-h2-eersteli: #13670b;
+    --color-broodtekst-p: #999999;
+  
+    --color-element1-link: #13670b;
+    --color-element1-hover-background: black;
+    --color-element1-hover-text:white;
+    --color-element1-focus-background: #cccccc;
+    --color-element1-active-background: #e3000f;
+    --color-element1-active-text:white;
+  
+    --color-text-h2-tweedeli: #1b4677;
+  
+    --color-background-button: #1b4677;
+    --color-text-background: white;
+    --color-element2-hover-background: #cccccc;
+    --color-element2-hover-text:white;
+    --color-element2-focus-background: black;
+    --color-element2-active-background: #e3000f;
+    --color-element2-active-text:white;
+  
+    --color-meerproducten: #646464;
+  
+    --color-text-h2-derdeli: #646464;
+  
+    --color-element3-button-text: white;
+    --color-element3-button-background: #cccccc;
+    --color-element3-hover-background: black;
+    --color-element3-hover-text:white;
+    --color-element3-focus-background: #cccccc;
+    --color-element3-active-background: #e3000f;
+    --color-element3-active-text:white;
+  }
+  
+  
+  .caroCarrousel ul li:nth-of-type(1) h2 {
+    font-family: Heineken;
+    font-size: 1.875em;
+    color: var(--color-text-h2-eersteli);
+    line-height: 1.3; 
+    letter-spacing: .031875rem;
+    padding-left: 1.5em;
+    top: -20em;
+    margin-top: -11em;
+    padding-bottom: 0;
+    width: 1em;
+  }
+  
+  .caroCarrousel ul li:nth-of-type(1) p {
+    font-family: PT sans, sans-serif;
+    font-size: 1em;
+    color: var(--color-broodtekst-p); 
+    font-weight:lighter;
+    letter-spacing: .031875rem;
+    width: 13em;
+    margin: 0;
+    padding-left: 2.7em; 
+    margin-top: -14em;
+  } 
+  
+  #element1 a {
+    font-family: PT sans, sans-serif;
+    color: white;
+    background-color: var(--color-element1-link);
+    letter-spacing: .031875rem;
+    text-decoration: none;
+    margin-top: -1.5em;
+    margin-left:2.7em;
+    padding: 0.8em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+    cursor: pointer;
+    width: 9.5em;
+  }
+  
+  #element1 a:hover {
+    background-color: var( --color-element1-hover-background);
+    color: var(--color-element1-hover-text);
+  }
+  
+  #element1 a:focus {
+    outline:none;
+    background-color: var(--color-element1-focus-background);
+  }
+  
+  #element1 a:active {
+    background-color:var(--color-element1-active-background);
+    color: var(--color-element1-active-text);
+  }
+  
+  .caroCarrousel ul li:nth-of-type(2) h2 {
+    font-family: Heineken;
+    font-size: 1.875em;
+    color: var(--color-text-h2-tweedeli);
+    letter-spacing: .031875rem;
+    padding-left: 1.5em;
+    top: -20em;
+    margin-top: -10em;
+    padding-bottom: 0;
+    width: 1em;
+  }
+  
+  .caroCarrousel ul li:nth-of-type(2) p{
+    font-family: PT sans, sans-serif;
+    font-size: 1em;
+    color: var(--color-broodtekst-p);
+    line-height: 1.3; 
+    font-weight:lighter;
+    letter-spacing: .031875rem;
+    width: 13.5em;
+    margin: 0;
+    padding-left: 2.7em; 
+    margin-top: -12em;
+  }
+  
+  #element2 a:nth-of-type(1) {
+    font-family: PT sans, sans-serif;
+    color: var(--color-text-background);
+    background-color: var(--color-background-button);
+    letter-spacing: .031875rem;
+    text-decoration: none;
+    margin-top: 2.5em;
+    margin-left:2.7em;
+    padding: 0.8em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+    cursor: pointer;
+    width: 9.5em;
+  }
+  
+  #element2 a:nth-of-type(1):hover {
+    background-color: var(--color-element2-hover-background);
+    color: var(--color-element2-hover-text);
+  }
+  
+  #element2 a:nth-of-type(1):focus{
+    outline:none;
+    background-color: var(--color-element2-focus-background);
+  }
+  
+  #element2 a:nth-of-type(1):active {
+    background-color:var(--color-element2-active-background);
+    color: var(--color-element2-active-text);
+  }
+  
+  #element2 a:nth-of-type(2) {
+    font-family: PT sans, sans-serif;
+    color: var(--color-meerproducten);
+    letter-spacing: .031875rem;
+    text-decoration: none;
+    margin-top: 1.5em;
+    margin-left:2.7em;
+    padding: 0.8em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+    cursor: pointer;
+    width: 20.5em;
+  }
+  
+  .caroCarrousel ul li:nth-of-type(3) h2 {
+    font-family: Heineken;
+    font-size: 1.875em;
+    color: var(--color-text-h2-derdeli);
+    letter-spacing: .031875rem;
+    padding-left: 1.5em;
+    top: -20em;
+    margin-top: -10em;
+    padding-bottom: 0;
+    width: 1em;
+  }
+  
+  .caroCarrousel ul li:nth-of-type(3) p{
+    font-family: PT sans, sans-serif;
+    font-size: 1em;
+    color: var(--color-broodtekst-p);
+    line-height: 1.3; 
+    font-weight:lighter;
+    letter-spacing: .031875rem;
+    width: 13.5em;
+    margin: 0;
+    padding-left: 2.7em; 
+    margin-top: -12em;
+  }
+  
+  #element3 a:nth-of-type(1) {
+    font-family: PT sans, sans-serif;
+    color: var(--color-element3-button-text);
+    background-color: var(--color-element3-button-background);
+    letter-spacing: .031875rem;
+    text-decoration: none;
+    margin-top: 2.5em;
+    margin-left:2.7em;
+    padding: 0.8em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+    cursor: pointer;
+    width: 9.5em;
+  }
+  
+  #element3 a:nth-of-type(1):hover {
+    background-color: var(--color-element3-hover-background);
+    color: var(--color-element3-hover-text);
+  }
+  
+  #element3 a:nth-of-type(1):focus{
+    outline:none;
+    background-color: var(--color-element3-focus-background);
+  }
+  
+  #element3 a:nth-of-type(1):active {
+    background-color:var(--color-element3-active-background);
+    color: var(--color-element3-active-text);
+  }
+  
+  #element3 a:nth-of-type(2) {
+    font-family: PT sans, sans-serif;
+    color: var(--color-meerproducten);
+    letter-spacing: .031875rem;
+    text-decoration: none;
+    margin-top: 1.5em;
+    margin-left:2.7em;
+    padding: 0.8em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+    cursor: pointer;
+    width: 20.5em;
+  }
+  
+  
+  /****************/
+  /* DE BOLLETJES */
+  
+  
+  /* de bolletjes container */
+  .caroCarrousel nav ul {
+    position: absolute;
+      left: 2em; right: 2em;
+      bottom: -3em;
+      margin: 0;
+    padding: 0 0 .5em;
+    list-style: none;
+      
+      display: flex;
+  /* 	flex-wrap:wrap; */
+    justify-content: center;
+    gap:.4em;
+  }
+  
+  /* een bolletje container */
+  .caroCarrousel > nav li {
+      flex-basis: 1.2em;
+      aspect-ratio: 1/1;
+  }
+  
+  /* de bolletjes */
+  .caroCarrousel > nav a {
+    display: block;
+    width:100%;
+    height:100%;
+    
+    text-decoration: none;
+      color: var(--caroCarrouselMainColor);
+    background-color: var(--caroCarrouselShadeColor);
+      border-radius: 50%;
+    outline: none;
+      box-shadow: inset 0 0 0 1px currentColor;
+    
+    transition: 0.5s;
+  }
+  
+  .caroCarrousel > nav a:hover,
+  .caroCarrousel > nav a:focus {
+    color: var(--caroCarrouselAccentColor);
+  }
+  
+  .caroCarrousel > nav a.current {
+    background-color: currentColor;
+  }
+  
+  .caroCarrousel > nav a:hover,
+  .caroCarrousel > nav a:focus {
+    color: var(--caroCarrouselAccentColor);
+  }
+  
+  .caroCarrousel > nav a.current {
+    background-color: currentColor;
+  }
+  
+  
+  /*********************/
+  /* PLAY/PAUSE BUTTON */
+  
+  
+  .caroCarrousel > button {
+    position: absolute;
+    right: .5em;
+    bottom: -2.5em;
+    
+    width: 1.2em;
+    aspect-ratio:1/1;
+    padding:0;
+    
+    font-size:inherit;
+    appearance: none;
+    background-color: var(--caroCarrouselShadeColor);
+  
+    border: none;
+      outline: none;
+      box-shadow: inset 0 0 0 1px currentColor;
+      cursor: pointer;
+      
+    transition: 0.5s;
+  
+      display: flex;
+    justify-content: center;
+      align-items: center;
+  }
+  
+  .caroCarrousel > button:hover,
+  .caroCarrousel > button:focus {
+    color: var(--caroCarrouselAccentColor);
+  }
+  
+  /* play/pause button */
+  .caroCarrousel > button::before,
+  .caroCarrousel > button::after {
+    content: "";
+    position: absolute;
+    width: .5em; height: 2px;
+    background-color: currentColor;
+    transform-origin: calc(100% - 1px) center;
+    transition:transform 0.5s;
+  }
+  
+  /* indien niet aan het auto-scrollen */
+  /* de streepjes vormen een play-icoon */
+  .caroCarrousel > button::before {
+      transform: translateY(0) rotate(45deg);
+  }
+  .caroCarrousel > button::after {
+      transform: translateY(0) rotate(-45deg);
+  }
+  
+  /* indien aan het auto-scrollen */
+  /* de streepjes vormen een pauze-icoon */
+  .caroCarrousel.autoScrolling > button::before {
+      transform: translateY(-2px);
+  }
+  .caroCarrousel.autoScrolling > button::after {
+      transform: translateY(2px);
+  }
+  
+  /* in de button draait een 'eierwekker' */
+  .caroCarrousel.autoScrolling > button {
+      animation-name: carrouselAutoScrollingButton;
+    animation-duration: calc(var(--caroCarrouselAutoScrollInterval) * 1ms);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes carrouselAutoScrollingButton {
+      0%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 0%, transparent 0%); }
+      2%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 2%, transparent 0%); }
+      4%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 4%, transparent 0%); }
+      6%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 6%, transparent 0%); }
+      8%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 8%, transparent 0%); }
+      
+      10%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 10%, transparent 0%); }
+      12%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 12%, transparent 0%); }
+      14%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 14%, transparent 0%); }
+      16%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 16%, transparent 0%); }
+      18%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 18%, transparent 0%); }
+  
+      20%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 20%, transparent 0%); }
+      22%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 22%, transparent 0%); }
+      24%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 24%, transparent 0%); }
+      26%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 26%, transparent 0%); }
+      28%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 28%, transparent 0%); }
+  
+      30%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 30%, transparent 0%); }
+      32%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 32%, transparent 0%); }
+      34%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 34%, transparent 0%); }
+      36%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 36%, transparent 0%); }
+      38%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 38%, transparent 0%); }
+  
+      40%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 40%, transparent 0%); }
+      42%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 42%, transparent 0%); }
+      44%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 44%, transparent 0%); }
+      46%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 46%, transparent 0%); }
+      48%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 48%, transparent 0%); }
+  
+      50%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 50%, transparent 0%); }
+      52%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 52%, transparent 0%); }
+      54%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 54%, transparent 0%); }
+      56%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 56%, transparent 0%); }
+      58%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 58%, transparent 0%); }
+  
+      60%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 60%, transparent 0%); }
+      62%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 62%, transparent 0%); }
+      64%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 64%, transparent 0%); }
+      66%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 66%, transparent 0%); }
+      68%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 68%, transparent 0%); }
+  
+      70%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 70%, transparent 0%); }
+      72%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 72%, transparent 0%); }
+      74%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 74%, transparent 0%); }
+      76%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 76%, transparent 0%); }
+      78%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 78%, transparent 0%); }
+  
+      80%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 80%, transparent 0%); }
+      82%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 82%, transparent 0%); }
+      84%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 84%, transparent 0%); }
+      86%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 86%, transparent 0%); }
+      88%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 88%, transparent 0%); }
+  
+      90%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 90%, transparent 0%); }
+      92%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 92%, transparent 0%); }
+      94%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 94%, transparent 0%); }
+      96%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 96%, transparent 0%); }
+      98%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 98%, transparent 0%); }
+      
+      100%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 100%, transparent 0%); }
+  }
+  
+  
+  
+  
+  /****************************************************************/
+  /* VIERDE SECTION /*
+  /****************************************************************/
+  
+  main section:nth-of-type(4) ul  {
+    display: flex;
+    flex-direction: column;
+    margin-top:9em;
+    /* margin-left:2em; */
+    overflow:hidden;
+  }
+
+  ul.open li {
+	transform:translateX(0vw);
+}
+  
+  main section:nth-of-type(4) img {
+    width: 100%;
+    object-fit: cover;
+    position: relative; 
+    display: block;
+    margin-left: -18em;
+    top: .5em;
+    z-index:-1;
+  }
+
+  main section:nth-of-type(4) li {
+    height:30em;
+	flex-shrink:0;
+	
+	transform:translateX(-75vw);
+	
+	transition:.3s;
+  }
+  
+  main section:nth-of-type(4) li:nth-of-type(1) {
+    /* background-color:pink; */
+	width:100vw;
+	margin-left:-3em;
+	display:flex;
+	justify-content:end;
+	align-items:center;
+  }
+
+
+  main section:nth-of-type(4) li:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      margin-top:-30em;
+      margin-left:17em;
+      /* background-color:dodgerblue; */
+	  width:75vw;
+  }
+  
+  main section:nth-of-type(4) ul li:nth-of-type(1) button img {
+    display:flex;
+	justify-content:end;
+	align-items:center;
+    left:24em;
+    width:7vw;
+    z-index:1;
+  }
+  /*********************/
+  /* VIERDE SECTION FONTS */
+  
+  :root {
+    --color-div-h2: #13670b;
+    --color-div-h3: #999999;
+    --color-div-p: #999999;
+    --color-div-button-text: white;
+    --color-div-button-background: #cccccc;
+  
+    --color-div-hover-text: white;
+    --color-div-hover-background:black;
+    --color-div-focus-background: #cccccc;
+    --color-div-active-text:white;
+    --color-div-active-background: #e3000f;
+  }
+  
+  
+  main section:nth-of-type(4)  h2 {
+    font-family: Heineken;
+    font-size: 1.875em;
+    color: var(--color-div-h2);
+    letter-spacing: .031875rem;
+    margin:0;
+    padding: 0.1em;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left:2.7em;
+    order: 2;
+  }
+  
+  main section:nth-of-type(4)  h3 {
+    font-size: .75em;
+    font-family: PT sans, sans-serif;
+    font-weight:lighter;
+    color: var(--color-div-h3);
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    margin-left:7em;
+    order:1;
+  }
+  
+  main section:nth-of-type(4)  p {
+    font-size: 1em;
+    font-family: PT sans, sans-serif;
+    font-weight:lighter;
+    color: var(--color-div-p);
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    margin-left:5.3em;
+    width: 15em;
+    order:3;
+  }
+  
+  main section:nth-of-type(4)  a {
+    font-family: PT sans, sans-serif;
+    color: var(--color-div-button-text);
+    background-color: var(--color-div-button-background);
+    letter-spacing: .031875rem;
+    text-decoration: none;
+    margin-top: 2.5em;
+    margin-left:5.5em;
+    padding: 0.8em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+    cursor: pointer;
+    width: 9.5em;
+    order:4;
+  }
+  
+  main section:nth-of-type(4)  a:hover {
+    background-color: var(--color-div-hover-background);
+    color: var(--color-div-hover-text);
+    cursor:pointer;
+  }
+  
+  main section:nth-of-type(4)  a:focus{
+    outline:none;
+    background-color: var(--color-div-focus-background);
+  }
+  
+  main section:nth-of-type(4)  a:active{
+    background-color:var(--color-div-active-background);
+    color: var(--color-div-active-text);
+  }
+  
+  
+  
+  
+  /****************************************************************/
+  /* VIJFDE SECTION /*
+  /****************************************************************/
+  :root {
+    --color-h2: #13670b;
+    --color-h3: #999999;
+    --color-p: #999999;
+  }
+  
+  
+  main section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22em;
+  }
+  
+  /*********************/
+  /* VIJFDE SECTION FONTS */
+  
+  main section:nth-of-type(5) h2 {
+    font-family: Heineken;
+    font-size: 1.875em;
+    color: var(--color-h2);
+    letter-spacing: .031875rem;
+    margin:0;
+    padding: 0.1em;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left:1.3em;
+    order: 2;
+  }
+  
+  main section:nth-of-type(5) h3 {
+    font-size: .75em;
+    font-family: PT sans, sans-serif;
+    font-weight:lighter;
+    color: var(--color-h3);
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    margin-left:3.5em;
+    margin-top: -25em;
+    order:1;
+  }
+  
+  main section:nth-of-type(5) p {
+    font-size: 1em;
+    font-family: PT sans, sans-serif;
+    font-weight:lighter;
+    color: var(--color-p);
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    margin-left:2.5em;
+    width: 19em;
+    order:3;
+  }
+  
+  
+  
+  
+  /****************************************************************/
+  /* ZESDE SECTION  /*
+  /****************************************************************/
+
+
+  section:nth-of-type(6) ul {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+	gap:1em;
+	margin:0;
+	padding:0;
+	list-style:none;
+    padding:1em;
+}
+
+section:nth-of-type(6) li {
+	position:relative;
+}
+
+
+section:nth-of-type(6) li:nth-of-type(1) {
+	grid-column-start:1;
+	grid-column-end:-1;
+    /* filter:brightness(.5); */
+}
+
+section:nth-of-type(6) li:nth-of-type(2) {
+	grid-column-start:1;
+	grid-column-end:-1;
+    /* filter:brightness(.5); */
+}
+
+
+section:nth-of-type(6) li img {
+	width:100%;
+}
+
+section:nth-of-type(6) li:nth-of-type(1) div  {
+    position:absolute;
+    left: 1.3em;
+    width: 12em;
+    height: 7.5em;
+    display:flex;
+    flex-direction: column;
+    background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+    opacity: .9;
+    top: 4em;
+    
+}
+  
+section:nth-of-type(6) li:nth-of-type(2) div {
+    position:absolute;
+    left: 1.3em;
+    width: 12em;
+    height: 8em;
+    display:flex;
+    flex-direction: column;
+    background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+    opacity: .9;
+    top: 3.5em;
+  }
+
+section:nth-of-type(6) li:nth-of-type(1) img:nth-of-type(2) {
+    width: 15%;
+    margin-left:17em;
+    margin-top:-2em;
+}
+  
+section:nth-of-type(6) li:nth-of-type(2) img:nth-of-type(2) {
+    width: 15%;
+    margin-left:17em;
+    margin-top:-4.5em;
+
+}
+
+
+
+  /****************************************************************/
+  /* TWEEDE SECTION 'ONS VERHAAL'  FONTJES! */
+  
+  :root {  
+    --color-text-h2: #13670b;
+    --color-text-vlakken: white;
+  }
+  
+
+  
+section:nth-of-type(6) li:nth-of-type(1) div h3 {
+    font-family: Heineken;
+    color: var( --color-text-vlakken);
+    font-size: 1.125em;
+    top: 0em;
+    margin:0;
+    left: 1em;
+    padding-left:0.4em;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+    order: 2;
+  }
+  
+section:nth-of-type(6) li:nth-of-type(1) div h4 {
+    font-family: PT sans, sans-serif;
+    font-size: 0.750em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    color: var( --color-text-vlakken);
+    padding-left:0.4em;
+    order:1;
+  }
+  
+section:nth-of-type(6) li:nth-of-type(1) div p {
+    font-family: PT sans, sans-serif;
+    font-size: 0.625em;
+    color: var( --color-text-vlakken);
+    padding-left:0.4em;
+    white-space: wrap;
+    overflow: hidden;  
+    order: 3;
+  }
+
+  
+  section:nth-of-type(6) li:nth-of-type(2) div h3 {
+    font-family: Heineken;
+    color: var( --color-text-vlakken);
+    font-size: 1.125em;
+    top: 0em;
+    margin:0;
+    left: 1em;
+    padding-left:0.4em;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+    order: 2;
+  }
+  
+section:nth-of-type(6) li:nth-of-type(2) div h4 {
+    font-family: PT sans, sans-serif;
+    font-size: 0.750em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: .031875rem;
+    color: var( --color-text-vlakken);
+    padding-left:0.4em;
+    order:1;
+  }
+  
+section:nth-of-type(6) li:nth-of-type(2) div p {
+    font-family: PT sans, sans-serif;
+    font-size: 0.625em;
+    color: var( --color-text-vlakken);
+    padding-left:0.4em;
+    white-space: wrap;
+    overflow: hidden;  
+    order: 3;
+  }
+
+
+
+
+
+
+  /****************************************************************/
+  /* ZEVENDE SECTION  /*
+  /****************************************************************/
+  :root {
+    --color-forminput-background: #ffffff1a;
+    --color-forminput-placeholder-text: white;
+    --color-form-button-background: #ffffff57;
+    --color-form-button-text: white;
+  
+    --color-form-button-hover-background: white;
+    --color-form-button-hover-text: #13670b;
+  
+    --color-label-text:white;
+  
+    --color-section7-h2: white;
+    --color-section7-p: white;
+  }
+  
+  
+  section:nth-of-type(7)  {
+    background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+    opacity: .9;
+    height:18em;
+  }
+  
+  section:nth-of-type(7) form {
+    display:flex;
+    margin-left:2.8em;
+  }
+  
+  section:nth-of-type(7) form input[type="email"] {
+    background-color: var(--color-forminput-background);
+    padding:.6875rem 1.25rem;
+    border:.0625rem solid rgba(255,255,255,.2);
+    display: block;
+    border-radius: .5em 0 0 0.5em;
+    cursor:pointer;
+  }
+  
+  section:nth-of-type(7) form input::placeholder {
+    color: var(--color-forminput-placeholder-text);
+  }
+  
+  section:nth-of-type(7) form button {
+    background-color:var(--color-form-button-background);
+    color:var(--color-form-button-text);
+    padding:.6875rem 1.25rem;
+    border:.0625rem solid rgba(255,255,255,.2);
+    border-radius: 0 0.5em 0.5em 0;
+  }
+  
+  section:nth-of-type(7) form button:hover {
+    background-color:var(--color-form-button-hover-background);
+    color:var(--color-form-button-hover-text);
+  }
+  
+  section:nth-of-type(7) label {
+    color: var(--color-label-text);
+    font-family: PT sans, sans-serif;
+    font-size: .875em;
+    margin-left: .5em;
+  }
+  
+  section:nth-of-type(7) h2 {
+    font-family:Heineken;
+    font-size:1.125em;
+    color: var(--color-section7-h2);
+    text-align: center;
+    padding-top:2em;
+  }
+  
+  section:nth-of-type(7) p {
+    font-family: PT sans, sans-serif;
+    font-size:.875em;
+    color: var(--color-section7-p);
+  }
+  
+
+

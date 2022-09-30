@@ -186,7 +186,7 @@ function createCaroCarrousel(carrouselID) {
   // de carrousel bij het begin starten
   iniStartPosition();
   // auto scroll activeren 
-  iniAutoScroll();
+  // iniAutoScroll();
 }
 
 
@@ -219,5 +219,18 @@ function derdeStreepjesButtonKlik() {
 
 
 
+
+/**************************/
+/* KNOPJE OP AFBEELDING SECTION */
+/**************************/
+
+var deKnop = document.querySelector("button");
+
+deKnop.addEventListener("click", toggleThingie);
+
+function toggleThingie() {
+	var deUl = document.querySelector("ul");
+	deUl.classList.toggle("open");
+}
 
 
