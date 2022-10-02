@@ -1,6 +1,6 @@
 
   /****************//****************/
-	/* MENU */
+	/* MENU CODE VAN SANNE */
 	/****************//****************/
 
 var menuKnop = document.querySelector("header button");
@@ -13,12 +13,22 @@ function toggleMenu() {
 
 
 
+/**************************/
+/* GELUIDJE MET BEHULP VAN SANNE */
+/**************************/
+var deButton = document.querySelector("section:nth-of-type(1) div a");
+var hetGeluid = document.querySelector("audio");
 
+deButton.addEventListener("click", speelGeluid);
+
+function speelGeluid() {
+	hetGeluid.play();
+}
 
 
 
   /****************//****************/
-	/* DE CARROUSSEL */
+	/* DE CARROUSSEL CODE VAN SANNE, SNAP IK NIET HELEMAAL */
 	/****************//****************/
 
 function createCaroCarrousel(carrouselID) {
@@ -228,11 +238,6 @@ function derdeStreepjesButtonKlik() {
 
 
 
-
-
-
-
-
 /**************************/
 /* KNOPJE OP AFBEELDING SECTION */
 /**************************/
@@ -244,7 +249,6 @@ function toggleThingie() {
 	var deUl = document.querySelector("section:nth-of-type(4) ul");
 	deUl.classList.toggle("open");
 }
-
 
 
 

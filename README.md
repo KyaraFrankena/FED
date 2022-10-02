@@ -312,5 +312,11 @@ Feedback vanuit Sanne na het gesprek:
      mijn menuknop die van 3lijnen veranderd in een kruisje en weer terug. 
   5. The noun project voor een pijl die open kan klappen. Tweemaal nodig op mijn website. 
     https://thenounproject.com/icon/arrow-3134103/
+  6. Om mijn geluidje toe te kunnen voegen heb ik een mp3 op de volgende website gedownload. Een geluid dat klinkt 
+    als het openen van een Heineken Silver.
+    https://nl.dreamstime.com/royalty-vrije-muziek-bierfles-het-openen-audio117794173
+  7. Omdat ik ook een kerstthema heb meegegeven aan mijn tweede pagina, had ik een icoontje nodig. Die heb ik 
+     bij de website van Nounproject gevonden.
+     https://thenounproject.com/icon/christmas-1999757/
 
 </details>

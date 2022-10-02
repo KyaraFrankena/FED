@@ -65,12 +65,68 @@
 
   --color-section7-h2: white;
   --color-section7-p: white;
+
+  --color-dark-h2: white;
+  --color-dark-main: black;
+  --color-dark-hover-background: white;
+  --color-dark-hover:black;
+  --color-dark-hover2-background: white;
+  --color-dark-hover2:black;
+  --color-dark-active-background: #e3000f;
+  --color-dark-active:white;
 }
 
 
 
+  @media (prefers-color-scheme: dark) {
+    .caroCarrousel {
+      --caroCarrouselMainColor:#ccc;
+      --caroCarrouselShadeColor:#4449;
+    }
+
+    main {
+      background-color:var(--color-dark-main);
+    }
+
+    img {
+      opacity: .5;
+    }
+   
+    div {
+      opacity: 2;
+    }
+   
+  
+    main section:nth-of-type(2) h2 {
+      color: var(--color-dark-h2);
+    }
+
+    main section:nth-of-type(4) ul li:nth-of-type(2) h2 {
+      color: var(--color-dark-h2);
+    }
 
 
+    main section:nth-of-type(3) #element1 a:hover {
+      background-color: var(--color-dark-hover-background);
+      color: var(--color-dark-hover);
+    }
+    main section:nth-of-type(3) #element3 a:nth-of-type(1):hover {
+      background-color: var(--color-dark-hover2-background);
+      color: var(--color-dark-hover2);
+    }
+
+    main section:nth-of-type(4) ul li:nth-of-type(2) a:hover {
+      background-color: var(--color-dark-hover-background);
+      color: var(--color-dark-hover);
+    }
+
+    main section:nth-of-type(4) ul li:nth-of-type(2) a:active {
+      background-color: var(--color-dark-active-background);
+      color: var(--color-dark-active);
+    }
+  }
+
+ 
   
   /********************************************************/
   /*  EERSTE SECTION FONT*/
@@ -117,6 +173,7 @@
     width: 16em;
     display:flex;
     flex-direction: column;
+    z-index:1;
   }
   
   main section:nth-of-type(1) img {
@@ -125,14 +182,13 @@
     object-fit: cover;
     position: relative; 
     display: block;
-    z-index: -1;
     filter:brightness(.5);
   }
   
   main section:nth-of-type(1) a {
     font-family: PT sans, sans-serif;
     color: var(--color-header-button);
-    background-color: #ffffff80;
+    background-color: var(--color-header-button-background);
     letter-spacing: .031875rem;
     text-decoration: none;
     top: 10em;
@@ -140,7 +196,7 @@
     text-align: center;
     display: inline-block;
     border-radius: 0;
-    width: 60%;
+    width: 90%;
     order: 3;
   }
   
@@ -238,6 +294,7 @@ section:nth-of-type(2) li:nth-of-type(1) div {
     background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
     opacity: .9;
     top: 1em;
+    z-index: 1;
   }
   
 section:nth-of-type(2) li:nth-of-type(2) div {
@@ -250,6 +307,7 @@ section:nth-of-type(2) li:nth-of-type(2) div {
     background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
     opacity: .9;
     top: .5em;
+    z-index: 1;
   }
   
 section:nth-of-type(2) li:nth-of-type(3) div {
@@ -262,6 +320,7 @@ section:nth-of-type(2) li:nth-of-type(3) div {
     flex-direction: column;
     background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
     opacity: .9;
+    z-index: 1;
   } 
   
 
@@ -399,14 +458,6 @@ section:nth-of-type(2) li:nth-of-type(3) div h4 {
   
     position: relative;
     outline:none;
-  }
-  
-  /* dark mode */
-  @media (prefers-color-scheme: dark) {
-    .caroCarrousel {
-      --caroCarrouselMainColor:#ccc;
-      --caroCarrouselShadeColor:#4449;
-    }
   }
   
   
@@ -1079,7 +1130,8 @@ section:nth-of-type(6) li:nth-of-type(1) div  {
   flex-direction: column;
   background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
   opacity: .9;
-  top: 4em;   
+  top: 4em;  
+  z-index: 1; 
 }
   
 section:nth-of-type(6) li:nth-of-type(2) div {
@@ -1092,6 +1144,7 @@ section:nth-of-type(6) li:nth-of-type(2) div {
   background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
   opacity: .9;
   top: 3.5em;
+  z-index: 1;
 }
 
 section:nth-of-type(6) li:nth-of-type(1) img:nth-of-type(2) {

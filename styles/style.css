@@ -5,6 +5,7 @@ body {
 :root {
   --color-header-background:#000000;
   --color-header-button: white;
+  --color-header-button-background: #ffffff80;
   --color-header-text: white;
   --color-header-hover-background: white;
   --color-header-hover-text:black;
@@ -52,7 +53,7 @@ header {
   background-color: var(--color-header-background);
   position:sticky;
   top: 0;
-  z-index:1;
+  z-index:5;
   height:4.5em;
 }
 
