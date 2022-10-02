@@ -320,9 +320,7 @@ Feedback vanuit Sanne na het gesprek:
   zo min mogelijk divjes/classes mag gebruiken en het werken met diverse animatie onderdelen. Veel geleerd in 4 weken tijd
   die ik zeker kan meenemen verder in dit jaar (toekomst).
 
-  <img src="images/HeinekenwebsiteElement1.jpg" width="375px" alt="Nieuw geleerd element1">
-  <img src="images/HeinekenwebsiteElement2.jpg" width="375px" alt="Nieuw geleerd element2">
-  <img src="images/HeinekenwebsiteElement2.jpg" width="375px" alt="Nieuw geleerd element3">
+
 
 
   ### Dit was lastig/Is niet gelukt:
