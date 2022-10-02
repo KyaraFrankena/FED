@@ -1,3 +1,21 @@
+@font-face {
+
+  font-family: "Heineken";
+
+  src: url("../Fonts/HEINEKEN.TTF") format("truetype")
+
+}
+
+@font-face {
+
+  font-family: "PT sans";
+
+  src: url("../Fonts/PTN57F.ttf") format("truetype")
+
+}
+
+
+
 body {
     margin: 0em;
 }
@@ -58,7 +76,9 @@ header {
 }
 
 header a img  {
-  width: 24%;
+  width: 100%;
+  max-width: 21%;
+  min-width: 15%;
   padding: 0.9em;
   position:relative;
   color:var(--color-header-text);
@@ -89,7 +109,7 @@ header nav {
   transform: translateX(-100%);
   transition: .3s;
   line-height:3em;
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-size: 0.875em;
   z-index:-1;
 }
@@ -117,7 +137,7 @@ header nav ul li:hover {
 }
 
 header nav ul li a {
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-size: 0.875em;
   letter-spacing: .031875rem;
   color: var(--color-header-text);
@@ -315,7 +335,7 @@ footer ul:nth-of-type(1) {
 }
 
 footer ul:nth-of-type(1) li a {
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-size:.875em;
   color: var(--color-footer-linkjes);
   text-decoration: none;
@@ -390,7 +410,7 @@ footer ul:nth-of-type(2) li:nth-of-type(4) a img:hover {
 }
 
 footer p {
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-size:.875em;
   color: var(--color-footer-p);
   opacity:.4;

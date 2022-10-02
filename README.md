@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Kyara Frankena 
 
   #### Je startniveau:
-  Mijn startniveau is blauw/rood (kies uit zwart, rood óf blauw)
+  Mijn startniveau is blauw/rood 
 
   #### Je focus:
-  Surface plane (kies uit responsive óf surface plane)
+  Surface plane 
  
 </details>
 
@@ -179,8 +179,9 @@ Feedback vanuit de studentassistenten na het gesprek:
   ### Verslag van meeting
 
 Feedback vanuit Sanne na het gesprek:
-  - meer code gaan schrijven
-  - 
+  - meer code gaan schrijven.
+  - soms logisch nadenken hoe je iets aanspreekt.
+  - durven fouten te maken.
 
 </details>
 
@@ -194,12 +195,23 @@ Feedback vanuit Sanne na het gesprek:
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Wederom heb ik deze testen uitgevoerd samen met Frank. 
+  Hieronder zal ik een conclusie beschrijven.
+
+  Door middel van het testen met de screenreader ben ik erachter gekomen dat sommige linkjes tekstueel nog niet juist zijn.
+  De kans is dus groot dat dit ook niet goed gaat op hun eigen site.
+
+  Kleuren voor een website kunnen essentieel zijn om het te begrijpen maar merkte al snel dat mocht je echt al lang kleurenblind zijn dit niet een probleem is om niet te kunnen weten waar het over gaat. Het is informatief sterk.
+
+  De buttons en linkjes zijn allemaal op zo danige grootte dat het klikbaarheid geen problemen hoeft te bezorgen.
+  Kortom op veel mogelijke manieren getest en er goed uitgekomen, in tegenstelling tot de rommelige code van heineken 
+  zelfs soms op hun eigen site.  
 
   #### Screenreader
   De screenreader heb ik getest op zowel linkjes als kopjes. 
   Die werken allemaal wel. Merk alleen dat als je kijkt naar sommige linkjes de teksten niet helemaal relevant zijn 
-  als je de screenreader gebruikt. Dus daar kan ik wel iets in veranderen en zorgen dat dit dus wel direct duidelijk word. 
+  als je de screenreader gebruikt. Dus daar kan ik wel iets in veranderen en zorgen dat dit dus wel direct duidelijk word.
+  Bijvoorbeeld dat de teksten in de linkjes niet duidelijk genoeg zijn zodra ze worden voorgelezen met een screenreader. 
 
 
   #### Muis en Toetsenbord 
@@ -241,8 +253,12 @@ Feedback vanuit Sanne na het gesprek:
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Momenteel ben ik een paar dagen voor de uiteindelijke deadline beland.
+  Momenteel ben ik een paar dagen voor de uiteindelijke deadline beland. Merk ik dat ik aardig goed op weg ben, maar de 
+  laatste loodjes nog wel wat tijd gaan innemen ben ik bang. Soms merk ik dat er kleine foutjes ergens aanwezig zouden 
+  moeten zijn die ik niet kan oplossen, daar even de tijd voor moet nemen en het uiteindelijk dan toch vind. Kortom
+  rustig blijven kijken en dan kom je er wel.
+  Elementen blijken soms niet helemaal goed gekoppeld te zijn dus hier heb ik dan ook op het laatste moment in de klas
+  nog wel wat vragen over zodat ik dit weekend het zelf kan afronden en inleveren. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -257,10 +273,10 @@ Feedback vanuit Sanne na het gesprek:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Mega goed geholpen door de studentenassisten (applaus) die de fout in mijn code hebben gevonden.
+  - Kreeg zelfs complimenten over wat ik al had gemaakt.
+  - Github up-to-date houden.
+  - Was een fijn gesprek, we hielpen elkaar waar nodig en dat werkte helemaal top. 
 
 </details>
 
@@ -274,19 +290,47 @@ Feedback vanuit Sanne na het gesprek:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images/Homepagina1.jpg" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/Homepagina2.jpg" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/Homepagina3.jpg" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/Homepagina4.jpg" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/Homepagina5.jpg" width="375px" alt="uitkomst opdracht 1">
 
+  <img src="images/HomepaginaDark1.jpg" width="375px" alt="uitkomst opdracht 1-1">
+  <img src="images/HomepaginaDark2.jpg" width="375px" alt="uitkomst opdracht 1-2">
+  <img src="images/HomepaginaDark3.jpg" width="375px" alt="uitkomst opdracht 1-3">
+  <img src="images/HomepaginaDark4.jpg" width="375px" alt="uitkomst opdracht 1-4">
+
+  <img src="images/Productenpagina1.jpg" width="375px" alt="uitkomst opdracht 2">
+  <img src="images/Productenpagina2.jpg" width="375px" alt="uitkomst opdracht 2">
+  <img src="images/Productenpagina3.jpg" width="375px" alt="uitkomst opdracht 2">
+
+  <img src="images/ProductenpaginaDark1.jpg" width="375px" alt="uitkomst opdracht 2-1">
+  <img src="images/ProductenpaginaDark2.jpg" width="375px" alt="uitkomst opdracht 2-2">
+  <img src="images/ProductenpaginaDark3.jpg" width="375px" alt="uitkomst opdracht 2-3">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Deze opdracht is bij mij echt volledig in fases gegaan. Aan het begin had ik zelfs moeite met het bedenken hoe de 
+  DOM ook alweer precies in elkaar zat (denk iets met vakantiemodus nog aan in mijn hoofd) terwijl toen ik eenmaal
+  lekker aan het schrijven was merkte ik dat het ook wel weer snel/soepel verliep en kon ik de elementen zo op z'n
+  plek zetten. Wel zaten er wat dingen in die ik nog nooit had gecodeerd maar gelukkig was er genoeg ondersteuning 
+  vanuit de docent, studenassistenten en mede-studenten om daarbij in oplossingen te denken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Het meeste wat ik heb geleerd is het combineren van verschillende elementen, op een manier te coderen waarbij je
+  zo min mogelijk divjes/classes mag gebruiken en het werken met diverse animatie onderdelen. Veel geleerd in 4 weken tijd
+  die ik zeker kan meenemen verder in dit jaar (toekomst).
+
+  <img src="images/HeinekenwebsiteElement1.jpg" width="375px" alt="Nieuw geleerd element1">
+  <img src="images/HeinekenwebsiteElement2.jpg" width="375px" alt="Nieuw geleerd element2">
+  <img src="images/HeinekenwebsiteElement2.jpg" width="375px" alt="Nieuw geleerd element3">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Hetgeen wat ik hier en daar moeilijker vond is het overal responsive krijgen van de diverse onderdelen.
+  Heb dat ook nog nooit gedaan dus denk dat ik in het algemeen ergens een foutje maak of niet direct weet hoe ik dat 
+  moet aanspreken om het responsive te krijgen. Dat zou ik in de toekomst nog wel willen leren om mijn kennis zo 
+  onder andere nog meer te verbreden.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -318,5 +362,7 @@ Feedback vanuit Sanne na het gesprek:
   7. Omdat ik ook een kerstthema heb meegegeven aan mijn tweede pagina, had ik een icoontje nodig. Die heb ik 
      bij de website van Nounproject gevonden.
      https://thenounproject.com/icon/christmas-1999757/
+  8. Naast bovenstaande bronnen heb ik de afgelopen weken hulp gekregen van Sanne, Yara en Russel. In combinatie met 
+     hun hulp heb ik de website kunnen maken wat ik nu heb ingeleverd. :)
 
 </details>

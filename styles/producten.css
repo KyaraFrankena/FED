@@ -8,7 +8,7 @@
 
   --color-hover-text: white;
   --color-hover-background:black;
-  --color-focus-background: #cccccc;
+  --color-focus-background: #13670b;
   --color-active-text:white;
   --color-active-background: #e3000f;
 
@@ -104,7 +104,7 @@ main section:nth-of-type(1)  h2 {
 
 main section:nth-of-type(1)  h3 {
   font-size: .75em;
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-weight:lighter;
   color: var(--color-h3);
   text-transform: uppercase;
@@ -117,7 +117,7 @@ main section:nth-of-type(1)  h3 {
 
 main section:nth-of-type(1)  p {
   font-size: 1em;
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-weight:lighter;
   color: var(--color-p);
   text-decoration: none;
@@ -267,7 +267,7 @@ main section:nth-of-type(3) ul li:nth-of-type(1) button img {
   display:flex;
   justify-content:end;
   align-items:center;
-  left:35em;
+  left:38em;
   width:7vw;
   z-index:1;
 }
@@ -289,7 +289,7 @@ main section:nth-of-type(3)  h2 {
 
 main section:nth-of-type(3)  h3 {
   font-size: .75em;
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-weight:lighter;
   color: var(--color-h3);
   text-transform: uppercase;
@@ -301,7 +301,7 @@ main section:nth-of-type(3)  h3 {
 
 main section:nth-of-type(3)  p {
   font-size: 1em;
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   font-weight:lighter;
   color: var(--color-p);
   text-decoration: none;
@@ -313,7 +313,7 @@ main section:nth-of-type(3)  p {
 }
 
 main section:nth-of-type(3)  a {
-  font-family: PT sans, sans-serif;
+  font-family: "PT sans", sans-serif;
   color: var(--color-button-text);
   background-color: var(--color-button-background);
   letter-spacing: .031875rem;
@@ -393,7 +393,7 @@ main section:nth-of-type(3)  a:active{
   
   section:nth-of-type(4) label {
     color: var(--color-label-text);
-    font-family: PT sans, sans-serif;
+    font-family: "PT sans", sans-serif;
     font-size: .875em;
     margin-left: .5em;
   }
@@ -407,7 +407,7 @@ main section:nth-of-type(3)  a:active{
   }
   
   section:nth-of-type(4) p {
-    font-family: PT sans, sans-serif;
+    font-family: "PT sans", sans-serif;
     font-size:.875em;
     color: var(--color-section4-p);
   }
