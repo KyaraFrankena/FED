@@ -1,0 +1,382 @@
+:root {
+  --color-h2: #13670b;
+  --color-h3: #999999;
+  --color-p: #999999;
+  --color-button-text: white;
+  --color-button-background: #cccccc;
+
+  --color-hover-text: white;
+  --color-hover-background:black;
+  --color-focus-background: #cccccc;
+  --color-active-text:white;
+  --color-active-background: #e3000f;
+
+  --color-background-tweedeplaatje-grid: #e4eff4;
+}
+
+
+/****************************************************************/
+/* EERSTE SECTION  /*
+/****************************************************************/
+
+main section:nth-of-type(1)   {
+  display: flex;
+  flex-direction: column;
+  margin-top:3em;
+  margin-left:-2em;
+  overflow:hidden;
+}
+
+
+main section:nth-of-type(1)  h2 {
+  font-family: Heineken;
+  font-size: 1.875em;
+  color: var(--color-h2);
+  letter-spacing: .031875rem;
+  margin:0;
+  padding: 0.1em;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left:2.7em;
+  order: 2;
+  width:9em;
+}
+
+main section:nth-of-type(1)  h3 {
+  font-size: .75em;
+  font-family: PT sans, sans-serif;
+  font-weight:lighter;
+  color: var(--color-h3);
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: .031875rem;
+  margin-left:7em;
+  order:1;
+}
+
+main section:nth-of-type(1)  p {
+  font-size: 1em;
+  font-family: PT sans, sans-serif;
+  font-weight:lighter;
+  color: var(--color-p);
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: .031875rem;
+  margin-left:5.3em;
+  width: 18em;
+  order:3;
+}
+
+
+
+/****************************************************************/
+/* TWEEDE SECTION  /*
+/****************************************************************/
+
+main section:nth-of-type(2) ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-left:-2.5em;
+  width:111%;
+}
+
+main section:nth-of-type(2) ul li img {
+  width:50%;
+  margin-left:3em;
+  margin-top: 1em;
+}
+
+main section:nth-of-type(2) ul li p {
+  text-align: center;
+  font-family: Heineken;
+  font-size:.625em;
+  color: black;
+  opacity: .4;
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(1) {
+  background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+  top: 1em;
+}
+
+
+main section:nth-of-type(2) ul li:nth-of-type(2) {
+  background:var(--color-background-tweedeplaatje-grid);
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(3) {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(210,210,210,1) 100%);
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(4) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(207,206,206,1) 100%);
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(5) {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  background: radial-gradient(circle, rgba(92,92,92,1) 0%, rgba(61,61,61,1) 100%);
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(6) {
+  grid-column-start:2;
+  grid-row-start: 3;
+  background: radial-gradient(circle, rgba(74,74,74,1) 0%, rgba(50,50,50,1) 100%);
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(7) {
+  grid-column-start:1;
+  grid-row-start: 4;
+  background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+}
+
+
+main section:nth-of-type(2) ul li img:hover {
+  scale:110%;
+  transition: 0.3s;
+  transform:rotate(360deg);
+  animation-duration: 7s;
+  cursor:url("../images/heinekenKerstboom2.svg"), auto;
+}
+
+
+
+
+
+
+/****************************************************************/
+/* DERDE SECTION /*
+/****************************************************************/
+
+main section:nth-of-type(3) ul  {
+  display: flex;
+  flex-direction: column;
+  margin-top:9em;
+  overflow:hidden;
+  margin-bottom:5em;
+}
+
+main section:nth-of-type(3) img {
+  width:150vw;
+  object-fit: cover;
+  position: relative; 
+  display: block;
+  margin-left: -18em;
+  top: .5em;
+  z-index:-1;
+}
+
+main section:nth-of-type(3) li {
+  height:30em;
+  flex-shrink:0;
+  transition:.3s;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(1) {
+  width:100vw;
+  margin-left:-3em;
+  display:flex;
+  justify-content:end;
+  align-items:center;
+  transform:translateX(-75vw);
+}
+
+main section:nth-of-type(3)  ul.open li:nth-of-type(1) {
+  transform:translateX(0vw);
+}
+
+main section:nth-of-type(3) li:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  margin-top:-31em;
+  margin-left:3.5em;
+  width:75vw;
+  z-index:-1;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(1) button img {
+  display:flex;
+  justify-content:end;
+  align-items:center;
+  left:35em;
+  width:7vw;
+  z-index:1;
+}
+
+/*********************/
+/* DERDE SECTION FONTS */
+
+ :root {
+  --color-div-h2: #13670b;
+  --color-div-h3: #999999;
+  --color-div-p: #999999;
+  --color-div-button-text: white;
+  --color-div-button-background: #cccccc;
+
+  --color-div-hover-text: white;
+  --color-div-hover-background:black;
+  --color-div-focus-background: #cccccc;
+  --color-div-active-text:white;
+  --color-div-active-background: #e3000f;
+}
+
+
+main section:nth-of-type(3)  h2 {
+  font-family: Heineken;
+  font-size: 1.875em;
+  color: var(--color-div-h2);
+  letter-spacing: .031875rem;
+  margin:0;
+  padding: 0.1em;
+  list-style-type: none;
+  text-decoration: none;
+  order: 2;
+}
+
+main section:nth-of-type(3)  h3 {
+  font-size: .75em;
+  font-family: PT sans, sans-serif;
+  font-weight:lighter;
+  color: var(--color-div-h3);
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: .031875rem;
+  order:1;
+}
+
+main section:nth-of-type(3)  p {
+  font-size: 1em;
+  font-family: PT sans, sans-serif;
+  font-weight:lighter;
+  color: var(--color-div-p);
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: .031875rem;
+  width: 17.6em;
+  order:3;
+  margin-top:0em;
+}
+
+main section:nth-of-type(3)  a {
+  font-family: PT sans, sans-serif;
+  color: var(--color-div-button-text);
+  background-color: var(--color-div-button-background);
+  letter-spacing: .031875rem;
+  text-decoration: none;
+  margin-top: -.1em;
+  padding: 0.8em;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+  width: 9.5em;
+  order:4;
+}
+
+main section:nth-of-type(3)  a:hover {
+  background-color: var(--color-hover-background);
+  color: var(--color-hover-text);
+  cursor:pointer;
+}
+
+main section:nth-of-type(3)  a:focus{
+  outline:none;
+  background-color: var(--color-focus-background);
+}
+
+main section:nth-of-type(3)  a:active{
+  background-color:var(--color-active-background);
+  color: var(--color-active-text);
+} 
+
+
+/****************************************************************/
+/* VIERDE SECTION  /*
+/****************************************************************/
+  :root {
+    --color-forminput-background: #ffffff1a;
+    --color-forminput-placeholder-text: white;
+    --color-form-button-background: #ffffff57;
+    --color-form-button-text: white;
+  
+    --color-form-button-hover-background: white;
+    --color-form-button-hover-text: #13670b;
+  
+    --color-label-text:white;
+  
+    --color-section7-h2: white;
+    --color-section7-p: white;
+  }
+  
+  
+  section:nth-of-type(4)  {
+    background: transparent radial-gradient(closest-side at 50% 50%,#51a025 0%,#13670b 71%,#005d1f 100%) 0% 0% no-repeat padding-box;
+    opacity: .9;
+    height:18em;
+  }
+  
+  section:nth-of-type(4) form {
+    display:flex;
+    margin-left:2.8em;
+  }
+  
+  section:nth-of-type(4) form input[type="email"] {
+    background-color: #ffffff1a;
+    padding:.6875rem 1.25rem;
+    border:.0625rem solid rgba(255,255,255,.2);
+    display: block;
+    border-radius: .5em 0 0 0.5em;
+    cursor:pointer;
+  }
+  
+  section:nth-of-type(4) form input::placeholder {
+    color: white;
+  }
+  
+  section:nth-of-type(4) form button {
+    background-color:#ffffff57;
+    color:white;
+    padding:.6875rem 1.25rem;
+    border:.0625rem solid rgba(255,255,255,.2);
+    border-radius: 0 0.5em 0.5em 0;
+  }
+  
+  section:nth-of-type(4) form button:hover {
+    background-color:white;
+    color:#13670b;
+  }
+  
+  section:nth-of-type(4) label {
+    color: white;
+    font-family: PT sans, sans-serif;
+    font-size: .875em;
+    margin-left: .5em;
+  }
+  
+  section:nth-of-type(4) h2 {
+    font-family:Heineken;
+    font-size:1.125em;
+    color: white;
+    text-align: center;
+    padding-top:2em;
+  }
+  
+  section:nth-of-type(4) p {
+    font-family: PT sans, sans-serif;
+    font-size:.875em;
+    color: white;
+  }
+  
+
+
+
+
+
+

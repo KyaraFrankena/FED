@@ -91,13 +91,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="images/HeinekenUittekeningHome.jpg" width="375px" alt="Screenshot van de gehele homepagina">
+  <img src="images/HeinekenUittekeningHomeMobile.jpg" width="375px" alt="Breakdown van homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images/HeinekenUittekeningProductenMobile.jpg" width="375px" alt="Breakdown van productenpagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images/HeinekenCarrousel.jpg" width="375px" alt="Breakdown van de carrousel">
 
 </details>
 
@@ -111,26 +111,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Momenteel heb ik mij voornamelijk gefocusd op mijn html code en heb ik hiervoor een opzetje gemaakt. 
+  Verder ben ik nog niet begonnen in mijn css. Na dit gesprek met de studentassistenten hoop ik te weten of ik 
+  op de juiste weg bezig ben, waar ik nog wat aanpassingen nodig heb en of ik redelijk bij loop.
+
+  Voor het binnen komen in het lokaal zouden wij met ons groepje bespreken waar wij allemaal zouden staan, 
+  helaas ging dit anders dan gepland en is de helft niet komen opdagen tijdens dit moment. Jade en ik waren een half
+  uurtje van tevoren wel aanwezig, alleen gaf zij aan nog niet veel werk te hebben (html) omdat zij daar niet uit kwam. 
+  Het maken van afspraken/punten met mijn groepje is deze week dan ook anders gelopen dan verwacht, wat ik persoonlijk
+  erg jammer vind...
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 (Kyara) | student 2 (Jade) | student 3 (Silke) | student 4 (Suneyska) |
+  | ---               | ---              | ---               | ---                  |
+  | Vragen of mijn    | Vragen over haar | Niet aanwezig     | Niet aanwezig
+  code semantisch     | menu hoe dit te  | tijdens gesprek   | tijdens gesprek
+  kloppend is.        | doen in html?
+                      | Andere website?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Feedback vanuit de studentassistenten na het gesprek:
+  - Html code is goed semantisch geschreven.
+  - Kijk nog even naar de volgorde met h2,h3,h4 en je img. Dus eerst je tekstelementen en dan je img. 
+  - Ga thuis veel stappen maken, veel gaan schrijven en dan in de les je vragen stellen.
 
 </details>
 
@@ -144,26 +151,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Helaas was er deze week een herhaling van afgelopen week, maar nu zo erg dat ik in mijn eentje ben over gebleven bij 
+  het bespreken van mijn website in de klas. Als groepje spreken (althans dan zouden we doen) we een half uur voor het 
+  check moment af in de medialounge om elkaars werk te zien, eventuele verbeterpunten door te geven en samen te kijken 
+  waar iedereen momenteel staat. Heb bijna het idee dat ik in herhaling val, maar dat is dus NIET gebeurt. Wel heb ik er 
+  zelf naar gekeken maar goed dat doe ik inmiddels al 2 weken.
+  Vervolgens heb ik samen met Sanne, alle tijd gehad om te kijken naar mijn website. De vragen te stellen  die ik op 
+  dat moment had (vooral over mijn eerste section die ik niet goed gepositioneerd kreeg) en ben ik een stuk wijzer
+  geworden hoe ik het kon aanpakken voor de weken erna. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 (Kyara)   | student 2  (Jade)    | student 3  (Silke) | student 4 (Suneyska) |
+  | ---                 | ---                  | ---                | ---              |
+  | De vraag hoe ik     | Heeft zich vanwege   | Niet aanwezig      | Niet aanwezig
+  de diverse elementen  | storing trein        | tijdens gesprek    | tijdens gesprek
+  in mijn eerste        | samengevoegd met de  |
+  section goed          | volgende groep.      |
+  gepositioneerd        |           
+  kan krijgen.          |
+
+           
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+Feedback vanuit Sanne na het gesprek:
+  - meer code gaan schrijven
+  - 
 
 </details>
 
@@ -180,27 +197,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De screenreader heb ik getest op zowel linkjes als kopjes. 
+  Die werken allemaal wel. Merk alleen dat als je kijkt naar sommige linkjes de teksten niet helemaal relevant zijn 
+  als je de screenreader gebruikt. Dus daar kan ik wel iets in veranderen en zorgen dat dit dus wel direct duidelijk word. 
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Website is wel tabbaar, alleen 1 button moet ik nog aanpassen die werkt niet binnen mijn html/css.
+  Bij blurred is de p tekst vrijwel niet meer leesbaar. De kleuren en afbeeldingen blijven nog wel herkenbaar.
+  Bij het veranderen van de kleuren blijft alles wel leesbaar en begrijpelijk. Het enige wat je merkt is dat 
+  de kleuren van het merk waardoor je direct weet wat het is niet meer te vinden is (zwart-wit, blauwtinten etc.). 
+  Ondanks dat is de website nog prima in gebruik. 
+  <img src="images/HeinekenTestZW.jpg" width="375px" alt="Screenshot test ZwartWit">
+  <img src="images/HeinekenTestGeel.jpg" width="375px" alt="Screenshot test Geeltinten">
+  <img src="images/HeinekenTestBlauw.jpg" width="375px" alt="Screenshot test Blauwtinten">
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De website is goed toegangelijk met het hebben van parkinson. Om de muis te kunnen gebruiken is het wel wat moeilijker
+  maar mijn testpersoon zelf heeft ook het idee dat als je parkinson hebt je meer je tab of pijltjes zal gebruiken  i.p.v.
+  je muis. De buttons zijn groot genoeg om te kunnen klikken, kortom werkt prima.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Geeltinten: Kleuren van mijn website worden anders, maar leesbaarheid&herkenbaarheid blijft.
+  Periphereal field loss: Het is goed te zien, alleen zodra je langere teksten hebt word het moeilijker om te kunnen lezen.
+  Combined loss: Het is goed te zien, alleen vanaf een afstandje begint het moeilijker te worden.
+  Low contrast: Leesbaarheid van testen minder, kleuren veranderen hier en daar
+  blur: Alles wordt wazig, logisch. Je ziet wel kleuren maar kan niet definieren wat er staat. Het word moeilijker om de 
+  website te begrijpen.
+  Hemifield loss: Goed zichtbaar, niet echt problemen bij het bekijken van mijn website.
+  Central field loss: Ondanks de zwarte stip in het midden is de website nog duidelijk te lezen. Je kan naast de stip kijken en vinden wat je zoekt.
+  
 
 </details>
 
@@ -215,17 +242,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Momenteel ben ik een paar dagen voor de uiteindelijke deadline beland.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | student 1 (Kyara)  | student 2 (Jade)    | student 3 (Silke)  | student 4 (Suneyska) |
+  | ---                | ---                 | ---                | ---                  |
+  | button met img     | Items naast elkaar, | Niet aanwezig      | Niet aanwezig
+  | clickable maken &  | footer voor elkaar  | tijdens gesprek    | tijdens gesprek
+  | hoe p toevoegen in | krijgen.            |
+  | grid?              |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -273,8 +300,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Niet zozeer dat ik iets van code van de website heb kunnen kopieren en plakken maar voornamelijk kennis van 
+     het grid en hoe te gebruiken heb ik hier vandaan kunnen halen 
+     https://css-tricks.com/snippets/css/complete-guide-grid/
+  2. Natuurlijk de website van Heineken, waarvan ik vrijwel alle content heb gehaald om er zo voor te zorgen dat 
+     mijn website zo goed mogelijk op de echte versie zal lijken.
+     https://www.heineken.com/nl/nl/home
+  3. Freepik, voor het hebben van de social media icons. Dit is een website die dit rechtenvrij aanbiedt. 
+     https://www.freepik.com/free-vector/social-media-logo-collection_3899143.htm#query=instagram%20icon&position=2&from_view=search#position=2&query=instagram%20icon
+  4. Code van Sanne vanuit codepen, denk hierbij aan het realiseren van mijn carrousel, maar ook het laten werken van 
+     mijn menuknop die van 3lijnen veranderd in een kruisje en weer terug. 
+  5. The noun project voor een pijl die open kan klappen. Tweemaal nodig op mijn website. 
+    https://thenounproject.com/icon/arrow-3134103/
 
 </details>
